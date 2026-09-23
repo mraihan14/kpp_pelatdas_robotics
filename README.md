@@ -72,7 +72,7 @@ Sesuai dengan isi file mari kita sebut Robot yang melakukan eksplorasi adalah **
   duck_bot.status_mission();
   duck_bot.log_mission();
   ```
-Perhatikan bahwa program harus dijalankan terurut, logika sederhannya bagaimana DuckBot bisa mengkesplorasi sebuah grid sedangkan ia tidak tahu apa maksud tiap karakter pada grid, atau lebih parah bahkan belum ada gridnya, di full code sudah diterapkan program yang akan menghentikan proses jika ada program yang belum dijalankan.
+Perhatikan bahwa program harus dijalankan terurut, logika sederhannya bagaimana DuckBot bisa mengeksplorasi sebuah grid sedangkan ia tidak tahu apa maksud tiap karakter pada grid, atau lebih parah bahkan belum ada gridnya, di full code sudah diterapkan program yang akan menghentikan proses jika ada program yang belum dijalankan.
 
 ### Algortima Eksplorasi
 Algoritma yang digunakan pada program ini terbilang cukup sederhana yakni `BFS` atau Breadth First Search, sebuah algoritma penjelajahan dengan mengunjungi **seluruh tetangga** terdekat-nya terlebih dahulu hingga mencapai titik tertentu.
@@ -87,7 +87,7 @@ Dalam konteks grid **tetangga** disini adalah sebuah tile yang berada di atas, d
 
 **Mengapa tidak DFS?** Penjelajahan tidak selalu optimal.
 
-**Mengapa tidak Dijkstra?** Tiap tile memiliki weight 1 untuk bergerak dari tile sebelumnya, pada dasarnya jika menerapkan dijkstar pada grid ini maka sama saja dengan BFS tetapi menggunakan priority_queue, bisa dioptimalkan.
+**Mengapa tidak Dijkstra?** Tiap tile memiliki weight 1 untuk bergerak dari tile sebelumnya, pada dasarnya jika menerapkan dijkstra pada grid ini maka sama saja dengan BFS tetapi menggunakan priority_queue, bisa dioptimalkan.
 
 **Mengapa tidak A star?** Overkill.
 
