@@ -87,7 +87,7 @@ Dalam konteks grid **tetangga** disini adalah sebuah tile yang berada di atas, d
 
 **Mengapa tidak DFS?** Penjelajahan tidak selalu optimal.
 
-**Mengapa tidak Dijkstra?** Tiap tile memiliki weight 1 untuk bergerak dari tile sebelumnya, pada dasarnya ini adalah BFS tetapi menggunakan priority_queue, bisa dioptimalkan
+**Mengapa tidak Dijkstra?** Tiap tile memiliki weight 1 untuk bergerak dari tile sebelumnya, pada dasarnya jika menerapkan dijkstar pada grid ini maka sama saja dengan BFS tetapi menggunakan priority_queue, bisa dioptimalkan.
 
 **Mengapa tidak A star?** Overkill.
 
@@ -119,7 +119,7 @@ position bfs(char task){
     }
 ```
 
-Terlihat sedikit terkutuk tapi inti kodenya adalah pergi ke-tile di empat arah berbeda jika belum dikunjungi atau bukan merupakan land mine, wall, dan keluar dari grid, dan simpan posisi tile sebelum menjelajahi tile sekarang.
+Terlihat sedikit terkutuk tapi inti kodenya adalah pergi ke-tile di empat arah berbeda jika belum dikunjungi atau bukan merupakan land mine, wall, dan keluar dari grid, lalu simpan posisi tile yang dikunjungi sebelum menjelajahi tile sekarang.
 > Kode bfsnya hanya 24 baris dari sekitar ~250 total baris kode.
 
 Dan sebenarnya itu adalah inti utama dari program, sisa ~200 baris kode lain adalah untuk menampilkan keluaran penjelajahan yang terurut seperti yang diharapkan pada penugasan KPP.
