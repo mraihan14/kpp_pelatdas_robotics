@@ -1,0 +1,142 @@
+============================SOAL 1================================
+Initialize Grid (7 X 7)
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+START POSITION    : (1,1)
+Task : Capture the flag and go to base
+MISSION START - Capture The Flag
+# # # # # # # 
+# R # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 1 - MOVE DOWN - Position ( 2 , 1 )
+# # # # # # # 
+# S # . . . # 
+# R # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 2 - MOVE DOWN - Position ( 3 , 1 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# R . . # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 3 - MOVE RIGHT - Position ( 3 , 2 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . R . # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 4 - MOVE RIGHT - Position ( 3 , 3 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . R # . # 
+# # # . . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 5 - MOVE DOWN - Position ( 4 , 3 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # R . . # 
+# X . . F . # 
+# # # # # # # 
+
+STEP 6 - MOVE DOWN - Position ( 5 , 3 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . R F . # 
+# # # # # # # 
+
+STEP 7 - MOVE RIGHT - Position ( 5 , 4 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . . R . # 
+# # # # # # # 
+
+MISSION STATUS : FLAG CAPTURED AT POSITION ( 5 , 4 )
+MOVE TO BASE
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . . # 
+# X . . R . # 
+# # # # # # # 
+
+STEP 8 - MOVE UP - Position ( 4 , 4 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . R . # 
+# X . . . . # 
+# # # # # # # 
+
+STEP 9 - MOVE RIGHT - Position ( 4 , 5 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # . # 
+# # # . . R # 
+# X . . . . # 
+# # # # # # # 
+
+STEP 10 - MOVE UP - Position ( 3 , 5 )
+# # # # # # # 
+# S # . . . # 
+# . # . # G # 
+# . . . # R # 
+# # # . . . # 
+# X . . . . # 
+# # # # # # # 
+
+STEP 11 - MOVE UP - Position ( 2 , 5 )
+# # # # # # # 
+# S # . . . # 
+# . # . # R # 
+# . . . # . # 
+# # # . . . # 
+# X . . . . # 
+# # # # # # # 
+
+MISSION STATUS : REACHED BASE AT POSITION ( 2 , 5 )
+MISSION COMPLETED
+
+
+LOG MISSION
+START POSITION  : (1,1)
+PATH TO FLAG    : DOWN DOWN RIGHT RIGHT DOWN DOWN RIGHT 
+FLAG CAPTURED   : (5,4)
+PATH TO BASE    : UP RIGHT UP UP 
+BASE REACHED    : (2,5)
+TOTAL MOVES     : 11
+============================  END  ===============================
